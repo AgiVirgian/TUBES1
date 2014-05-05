@@ -13,9 +13,9 @@
   <div id="nav">
   <ul class="nav-link">
      <li id="acitve-nav"><a href="index.php">Home</a></li>
-     <li><a href="tugas.php.php">Tugas</a></li>
-     <li><a href="about.php.php">About</a></li>
-     <li><a href="contact.php.php">Contact</a></li>
+     <li><a href="tugas.php">Tugas</a></li>
+     <li><a href="about.php">About</a></li>
+     <li><a href="contact.php">Contact</a></li>
   </ul>
   </div>
  </div>
