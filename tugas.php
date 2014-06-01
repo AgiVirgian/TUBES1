@@ -25,7 +25,7 @@
  <?php
 $file ="http://techno.okezone.com/breaking/56";
 $doc = new DOMDocument();
-$doc->loadHTMLFile($file);
+@$doc->loadHTMLFile($file);
 
 $xpath = new DOMXpath($doc);
 $elements = $xpath->query("//div[@class='subkanal-content-list fl']/ul/li");
