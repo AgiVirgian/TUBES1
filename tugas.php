@@ -28,14 +28,14 @@ $doc = new DOMDocument();
 $doc->loadHTMLFile($file);
 
 $xpath = new DOMXpath($doc);
-$elements = $xpath->query("//*[@id]");
+$elements = $xpath->query("//div[@class='subkanal-content-list fl']/ul/li");
 if (!is_null($elements)) {
   foreach ($elements as $element) {
-    echo "<br/>[". $element->nodeName. "]";
+    
 
     $nodes = $element->childNodes;
     foreach ($nodes as $node) {
-      echo $node->nodeValue. "\n";
+      echo "<table><tr><td>". $node->nodeValue. "</td></tr></table>";
     }
   }
 }
